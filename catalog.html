@@ -55,7 +55,6 @@
                 </li>
             </ol>
 
-            <div class="catalog-filter">
                 <fieldset class="catalog-filter-group">
                     <legend class="catalog-filter-title">Инфраструктура:</legend>
                     <ul class="catalog-filter-list">
@@ -88,12 +87,12 @@
                                     Гостиница
                             </label>
                         </li>
-                        <li class="catalog-filter-item">  
+                        <li class="catalog-filter-item">
                             <label class="control">
                                 <input class="control-input" type="radio" name="motel">
                                     Мотель
                             </label>
-                        </li class="catalog-filter-item">  
+                        </li>
                         <li class="catalog-filter-item">
                             <label class="control">
                                 <input class="control-input" type="radio" name="apartments">
@@ -105,22 +104,21 @@
                 <fieldset class="catalog-filter-group">
                     <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                     <label class="control">
-                        <input class="control-input" type="text" name="price-min" min="0" max="9000" value="0">
+                        <input class="control-input" type="text" name="price-min" value="0">
                             от
                     </label>
                     <label class="control">
-                        <input class="control-input" type="text" name="price-max" min="0" max="9000" value="9000">
+                        <input class="control-input" type="text" name="price-max" value="9000">
                             до
                     </label>
                     <label class="control">
                         <input class="control-range-input" type="range" name="price-range" min="0" max="9000" value="7500">
                     </label>
                 </fieldset>
-                <div class="catalog-filter-control"></div>
+                <div class="catalog-filter-control">
                     <input type="submit" value="Применить">
                     <input type="reset" value="Сбросить">
                 </div>
-            </div>
         </header>
 
         <section class="catalog">
@@ -131,133 +129,57 @@
                     <option class="sorting" value="expensive">Сначала дорогие</option>
                     <option class="sorting" value="popular">Сначала популярное</option>
                 </select>
-                <img src="" alt="Сортировка значками">
-                <img src="" alt="Сортировка плиткой">
-                <img src="" alt="Сортировка списком">
+                <img src="#" alt="Сортировка значками">
+                <img src="#" alt="Сортировка плиткой">
+                <img src="#" alt="Сортировка списком">
             </div>
             <ul class="catalog-list" >
                 <li class="catalog-item">
                     <img class="catalog-item-image" src="#" alt="#">
                     <div class="catalog-item-content">
-                            <h3 class="catalog-item-title">Amara Resort & Spa</h3>
-                        <ul class="catalog-item-detail">
-                            <li class="catalog-item-detail-item">
-                                <p class="catalog-item-text">Гостиница</p>
-                                <li class="catalog-item-detail-item">
-                                    <p class="catalog-item-text">От 4000 ₽</p>
-                                  </li>
-                                </ul>
-                                <ul class="catalog-item-controls">
-                                  <li class="catalog-item-controls-item">
-                                    <a class="button-detail button" href="#">ПОДРОБНЕЕ</a>
-                                  </li>
-                                  <li class="catalog-item-controls-item">
-                                    <a class="button-favorites button" href="#">В ИЗБРАННОЕ</a>
-                                  </li>
-                                </ul>
-                                <ul class="raiting-stars">
-                                    <li class="raiting-stars-item">
-                                        <img class="raiting-stars-icon" alt="Рейтинг в звездах">
-                                    </li>
-                                    <li class="rating-stars-item">
-                                        <p class="rating-stars-item-text">Рейтинг: 8,5</p>
-                                    </li>
-                                </ul>
-                            </li>    
-                        </ul>
+                        <h3 class="catalog-item-title">Amara Resort & Spa</h3>
+                        <p class="catalog-item-text">Гостиница</p>
+                        <p class="catalog-item-text">От 4000 ₽</p>
+                        <a class="button-detail button" href="#">ПОДРОБНЕЕ</a>
+                        <a class="button-favorites button" href="#">В ИЗБРАННОЕ</a>
+                        <img class="raiting-stars-icon" src="#" alt="Рейтинг в звездах">
+                        <p class="rating-stars-item-text">Рейтинг: 8,5</p>
                     </div>
                 </li>
                 <li class="catalog-item">
                     <img class="catalog-item-image" src="#" alt="#">
                     <div class="catalog-item-content">
-                            <h3 class="catalog-item-title">Villas at Poco Diablo</h3>
-                        <ul class="catalog-item-detail">
-                            <li class="catalog-item-detail-item">
-                                <p class="catalog-item-text">Гостиница</p>
-                                <li class="catalog-item-detail-item">
-                                    <p class="catalog-item-text">От 5000 ₽</p>
-                                  </li>
-                                </ul>
-                                <ul class="catalog-item-controls">
-                                  <li class="catalog-item-controls-item">
-                                    <a class="button-detail button" href="#">ПОДРОБНЕЕ</a>
-                                  </li>
-                                  <li class="catalog-item-controls-item">
-                                    <a class="button-favorites button" href="#">В ИЗБРАННОЕ</a>
-                                  </li>
-                                </ul>
-                                <ul class="raiting-stars">
-                                    <li class="raiting-stars-item">
-                                        <img class="raiting-stars-icon" alt="Рейтинг в звездах">
-                                    </li>
-                                    <li class="rating-stars-item">
-                                        <p class="rating-stars-item-text">Рейтинг: 9,2</p>
-                                    </li>
-                                </ul>
-                            </li>                                
-                        </ul>
+                        <h3 class="catalog-item-title">Villas at Poco Diablo</h3>
+                        <p class="catalog-item-text">Гостиница</p>
+                        <p class="catalog-item-text">От 5000 ₽</p>
+                        <a class="button-detail button" href="#">ПОДРОБНЕЕ</a>
+                        <a class="button-favorites button" href="#">В ИЗБРАННОЕ</a>
+                        <img class="raiting-stars-icon" src="#" alt="Рейтинг в звездах">
+                        <p class="rating-stars-item-text">Рейтинг: 9,2</p>
                     </div>
                 </li>
                 <li class="catalog-item">
                     <img class="catalog-item-image" src="#" alt="#">
                     <div class="catalog-item-content">
-                            <h3 class="catalog-item-title">Desert Quail Inn</h3>
-                        <ul class="catalog-item-detail">
-                            <li class="catalog-item-detail-item">
-                                <p class="catalog-item-text">Гостиница</p>
-                                <li class="catalog-item-detail-item">
-                                    <p class="catalog-item-text">От 2500 ₽</p>
-                                  </li>
-                                </ul>
-                                <ul class="catalog-item-controls">
-                                  <li class="catalog-item-controls-item">
-                                    <a class="button-detail button" href="#">ПОДРОБНЕЕ</a>
-                                  </li>
-                                  <li class="catalog-item-controls-item">
-                                    <a class="button-favorites button" href="#">В ИЗБРАННОЕ</a>
-                                  </li>
-                                </ul>
-                                <ul class="raiting-stars">
-                                    <li class="raiting-stars-item">
-                                        <img class="raiting-stars-icon" alt="Рейтинг в звездах">
-                                    </li>
-                                    <li class="rating-stars-item">
-                                        <p class="rating-stars-item-text">Рейтинг: 6,9</p>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
+                        <h3 class="catalog-item-title">Desert Quail Inn</h3>
+                        <p class="catalog-item-text">Гостиница</p>
+                        <p class="catalog-item-text">От 2500 ₽</p>
+                        <a class="button-detail button" href="#">ПОДРОБНЕЕ</a>
+                        <a class="button-favorites button" href="#">В ИЗБРАННОЕ</a>
+                        <img class="raiting-stars-icon" src="#" alt="Рейтинг в звездах">
+                        <p class="rating-stars-item-text">Рейтинг: 6,9</p>
                     </div>
                 </li>
                 <li class="catalog-item">
                     <img class="catalog-item-image" src="#" alt="#">
                     <div class="catalog-item-content">
-                            <h3 class="catalog-item-title">GreenTree Inn</h3>
-                        <ul class="catalog-item-detail">
-                            <li class="catalog-item-detail-item">
-                                <p class="catalog-item-text">Гостиница</p>
-                                <li class="catalog-item-detail-item">
-                                    <p class="catalog-item-text">От 1500 ₽</p>
-                                  </li>
-                                </ul>
-                                <ul class="catalog-item-controls">
-                                  <li class="catalog-item-controls-item">
-                                    <a class="button-detail button" href="#">ПОДРОБНЕЕ</a>
-                                  </li>
-                                  <li class="catalog-item-controls-item">
-                                    <a class="button-favorites button" href="#">В ИЗБРАННОЕ</a>
-                                  </li>
-                                </ul>
-                                <ul class="raiting-stars">
-                                    <li class="raiting-stars-item">
-                                        <img class="raiting-stars-icon" alt="Рейтинг в звездах">
-                                    </li>
-                                    <li class="rating-stars-item">
-                                        <p class="rating-stars-item-text">Рейтинг: 5,0</p>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
+                        <h3 class="catalog-item-title">GreenTree Inn</h3>
+                        <p class="catalog-item-text">Гостиница</p>
+                        <p class="catalog-item-text">От 1500 ₽</p>
+                        <a class="button-detail button" href="#">ПОДРОБНЕЕ</a>
+                        <a class="button-favorites button" href="#">В ИЗБРАННОЕ</a>
+                        <img class="raiting-stars-icon" src="#" alt="Рейтинг в звездах">
+                        <p class="rating-stars-item-text">Рейтинг: 5,0</p>
                     </div>
                 </li>
             </ul>
@@ -286,7 +208,7 @@
         </section>
     </main>
 
-    
+
         <section class="subscribe subscribe-inner">
              <h2 class="subscribe-heading subscribe-heading-inner">Подпишитесь на рассылку</h2>
              <p class="subscribe-text subscribe-text-inner">Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -298,7 +220,7 @@
                 </button>
              </form>
         </section>
-  
+
      <footer class="page-footer">
             <ul class="footer-social-list">
               <li class="footer-social-item">
