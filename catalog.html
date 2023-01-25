@@ -36,11 +36,11 @@
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">Избранное</span>
-              <span>12</span>
+              <span class="favorite-text">12</span>
             </a>
           </li>
         </ul>
-        <a class="navigation-link navigation-link-button" href="#">Хочу сюда!</a>
+        <a class="header-link-button" href="#">Хочу сюда!</a>
       </nav>
     </header>
 
@@ -106,11 +106,11 @@
           </fieldset>
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-            <label class="control">
+            <label class="control-label-input">
               <input class="control-input" type="text" name="price-min" value="0">
               от
             </label>
-            <label class="control">
+            <label class="control-label-input">
               <input class="control-input" type="text" name="price-max" value="9000">
               до
             </label>
@@ -140,12 +140,12 @@
                 <span class="visually-hidden">Сортировка значками</span>
               </button>
             </li>
-            <li class="sorting-card-item" >
+            <li class="sorting-card-item">
               <button class="sorting-card-button" type="button">
                 <span class="visually-hidden">Сортировка плиткой</span>
               </button>
             </li>
-            <li class="sorting-card-item" >
+            <li class="sorting-card-item">
               <button class="sorting-card-button" type="button">
                 <span class="visually-hidden">Сортировка списком</span>
               </button>
@@ -158,7 +158,7 @@
             <div class="catalog-item-content">
               <h3 class="catalog-item-title">Amara Resort & Spa</h3>
               <span class="catalog-item-text">Гостиница</span>
-              <span class="catalog-item-text">От 4000 ₽</span>
+              <span class="catalog-item-text text-price">От 4000 ₽</span>
               <a class="button-detail button" href="#">ПОДРОБНЕЕ</a>
               <button class="button-favorites button" type="button">В ИЗБРАННОЕ</button>
               <span class="rating-stars-item-text">Рейтинг: 8,5</span>
@@ -199,9 +199,9 @@
           </li>
         </ul>
         <div class="pagination-catalog">
-          <ul class="pagination-catalog-list">
-            <li class="pagination-item pagination-item-current">
-              <a class="pagination-link" href="#">1</a>
+          <ol class="pagination-catalog-list">
+            <li class="pagination-item">
+              <a class="pagination-link pagination-current" href="#">1</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">2</a>
@@ -213,18 +213,18 @@
               <a class="pagination-link" href="#">4</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">...</a>
+              <a class="pagination-link pagination-space" href="#">...</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">10</a>
             </li>
-          </ul>
+          </ol>
         </div>
       </section>
 
       <section class="subscribe subscribe-inner">
         <h2 class="subscribe-heading subscribe-heading-inner">Подпишитесь на рассылку</h2>
-        <p class="subscribe-text subscribe-text-inner">Только полезная информация и никакого спама, честное
+        <p class="subscribe-text subscribe-text-inner">Только полезная информация и никакого спама,<br> честное
           бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <label for="subscribe-email" class="visually-hidden">Ваш e-mail</label>
