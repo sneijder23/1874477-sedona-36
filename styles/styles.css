@@ -31,6 +31,17 @@ img {
   object-fit: contain;
 }
 
+.button {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border-radius: 4px;
+}
 /* Стили для header */
 .navigation-list {
   font-weight: 700;
@@ -58,22 +69,13 @@ img {
 }
 
 .header-link-button {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  color: #FFFFFF;
-  text-decoration: none;
-  text-transform: uppercase;
   background-color: #756157;
-  border-radius: 4px;
 }
 
 /* Стили для main */
 .hero {
-  background-color: #FFFFFF;
-  background: url(../images/hero-background.jpg) no-repeat,
-              url(../images/vector-hero-background.svg) no-repeat;
+  background: url(../images/vector-hero-background.svg) left bottom no-repeat,
+              url(../images/hero-background.jpg) no-repeat;
 }
 
 /*Блок Причин*/
@@ -184,21 +186,14 @@ img {
 }
 
 .search-button {
-  font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  text-align: center;
-  color: #FFFFFF;
-  text-decoration: none;
-  text-transform: uppercase;
   background-color: #756157;
-  border-radius: 4px;
 }
 
 /*Блок подписки на рассылку */
 .subscribe {
   color: #FFFFFF;
-  background-color: #ffffff;
   background:  url(../images/subscribe-background.jpg) no-repeat;
 }
 
@@ -217,20 +212,18 @@ img {
 }
 
 .field {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
 }
 
 .subscribe-button {
-  font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  text-align: center;
-  color: #ffffff;
   background-color: #82B3D3;
-  text-decoration: none;
-  text-transform: uppercase;
 }
 
 /*Подвал сайта*/
@@ -255,7 +248,6 @@ img {
 /*Страница Каталог*/
 .inner-header {
   color: #FFFFFF;
-  background-color: #ffffff;
   background-image: url(../images/catalog/catalog-background.jpg);
   background-repeat: no-repeat;
 }
@@ -280,7 +272,7 @@ img {
 }
 
 .control-input {
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -297,26 +289,11 @@ img {
 }
 
 .control-button-submit {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  color: #FFFFFF;
-  text-decoration: none;
-  text-transform: uppercase;
   background-color: #82B3D3;
   border: 1px solid #82B3D3;
-  border-radius: 4px;
 }
 
 .control-button-reset {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  color: #FFFFFF;
-  text-decoration: none;
-  text-transform: uppercase;
   border: 1px solid rgba(0, 0, 0, 0);
   background-color: rgba(0, 0, 0, 0);
 }
@@ -329,6 +306,18 @@ img {
   text-transform: uppercase;
 }
 
+.sorting {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.sorting-card-button {
+  font-family: "PT Sans";
+}
 .catalog-item {
   background-color: #E6E6E6;
   border: 1px solid #E6E6E6;
@@ -336,28 +325,12 @@ img {
 }
 
 .button-detail {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  color: #FFFFFF;
-  text-decoration: none;
-  text-transform: uppercase;
   background-color: #756157;
-  border-radius: 4px;
 }
 
 .button-favorites {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0);
   background-color: #82B3D3;
-  border-radius: 4px;
-  text-decoration: none;
-  text-transform: uppercase;
 }
 
 .text-price {
@@ -380,15 +353,9 @@ img {
 }
 
 .pagination-link {
-  font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  text-align: center;
-  color: #FFFFFF;
-  text-decoration: none;
-  text-transform: uppercase;
   background-color: #82B3D3;
-  border-radius: 4px;
 }
 
 .pagination-current {
