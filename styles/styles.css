@@ -74,6 +74,7 @@ img {
 
 /* Стили для main */
 .hero {
+  background-color: #83B3D3;
   background: url(../images/vector-hero-background.svg) left bottom no-repeat,
               url(../images/hero-background.jpg) no-repeat;
 }
@@ -248,6 +249,7 @@ img {
 /*Страница Каталог*/
 .inner-header {
   color: #FFFFFF;
+  background-color: #68A2CA;
   background-image: url(../images/catalog/catalog-background.jpg);
   background-repeat: no-repeat;
 }
