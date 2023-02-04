@@ -90,7 +90,7 @@ img {
 .logo {
   height: 100%;
   position: relative;
-  margin-right: 30px;
+  margin-right: 28px;
 }
 
 .navigation {
@@ -230,6 +230,7 @@ img {
 
 .reason-item {
   max-width: 400px;
+  min-height: 385px;
   padding: 112px 85px;
   display: flex;
   flex-direction: column;
@@ -247,7 +248,7 @@ img {
 
 .wrapper-card {
   max-width: 400px;
-  max-height: 385px;
+  min-height: 385px;
   height: 100%;
   padding: 101px 85px;
   display: flex;
@@ -537,6 +538,7 @@ img {
 }
 
 .breadcrumbs-item {
+  font-size: 16px;
   margin-right: 28px;
 }
 
@@ -547,9 +549,11 @@ img {
 
 .catalog-filter {
   display: flex;
+  word-break: break-all;
 }
 
 .catalog-filter-group {
+  min-width: 150px;
   display: flex;
   flex-wrap: wrap;
   margin: 0 70px 0 0;
@@ -588,15 +592,16 @@ img {
 }
 
 .control {
-  width: 137px;
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
   display: flex;
-  align-self: center;
+  align-self: flex-start;
 }
 
 .control-input {
+  min-width: 20px;
+  height: 20px;
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
@@ -604,8 +609,8 @@ img {
   line-height: 24px;
   color: #000000;
   background-color: #F2F2F2;
-  margin-right: 16px;
-  align-self: center;
+  align-self: flex-start;
+  margin: 0 16px 0 0;
 }
 
 .control-label-input {
@@ -725,6 +730,7 @@ img {
   gap: 16px 20px;
   margin: 0;
   padding: 20px;
+  word-break: break-all;
   outline: 1px solid #E6E6E6;
   border-radius: 4px;
   box-sizing: border-box;
@@ -738,6 +744,9 @@ img {
   max-width: 300px;
   grid-column: 1 / -1;
   margin: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
 }
 .button-detail {
   min-height: 36px;
@@ -755,6 +764,10 @@ img {
   background-color: #82B3D3;
   padding: 0;
   box-sizing: border-box;
+}
+
+.btn-favorites-active {
+  background-color: #7DB54F;
 }
 
 .text-price {
