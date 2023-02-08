@@ -199,18 +199,19 @@ img {
   background-color: rgba(0, 0, 0, 0);
 }
 
-.sorting-card-button:hover,
-.sorting-card-button:active {
-  border: 2px solid #000000;
+.sorting-card-button:hover {
+  border-color:#000000;
 }
 
 .sorting-card-button:focus {
-  border: 2px solid #68A2CA;
+  border-color: #68A2CA;
+  outline: 0;
 }
 
-.icon-view:focus {
-  border: 2px solid #68A2CA;;
+.sorting-card-button:active {
+  border-color: #000000;
 }
+
 
 /* Стили для header */
 .page-header {
@@ -1132,13 +1133,13 @@ img {
   appearance: none;
 }
 
-.select-control:hover,
-.select-control:focus {
+.select-control:hover {
   border-color: #68A2CA;
 }
 
-.select-control:focus-visible {
-  border-color: #3F5E72;
+.select-control:focus {
+  border-color: #68A2CA;
+  outline: none;
 }
 
 .select-control:disabled {
