@@ -226,10 +226,9 @@ img {
 }
 
 .logo-container {
-  min-width: 140px;
+  width: 140px;
   height: 64px;
-  margin-right: 29px;
-  align-items: top;
+  margin-right: 28px;
 }
 
 .header-logo {
@@ -292,6 +291,7 @@ img {
 
 .navigation-link {
   display: block;
+  position: relative;
   padding: 20px 16px;
   word-break: break-all;
   color: #000000;
@@ -301,7 +301,7 @@ img {
 .favorite-text {
   position: absolute;
   min-width: 20px;
-  padding: 5px 5px 4px 4px;
+  padding: 5px 5px 5px 4px;
   left: 20px;
   top: 11px;
   font-size: 10px;
@@ -337,11 +337,14 @@ img {
   background-size: 18px 17px;
 }
 
-.navigation-link-current {
-  border-bottom: 2px solid #756257;
-  margin: 0 16px -1px;;
-  padding: 19px 0;
-  position: relative;
+.navigation-link-current::after {
+  position: absolute;
+  top: 63px;
+  left: 16px;
+  right: 16px;
+  padding: 0 6px;
+  border: 1px solid #756257;
+  content: "";
 }
 
 .button-header-container {
@@ -1012,12 +1015,16 @@ img {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  padding: 12px 43px 12px 20px;
+  padding: 13px 43px 11px 20px;
   margin: 0 2px 0 0;
   text-align: left;
   background-color: #F2F2F2;
   border: none;
   appearance: textfield;
+}
+
+.price-input::placeholder {
+  color: #000000;
 }
 
 .price-input-text {
@@ -1048,7 +1055,7 @@ img {
   outline: 3px solid #83B3D3;
 }
 
-.price-input:active {
+.price-input:focus-visible:not(:placeholder-shown) {
   outline: 2px solid #000000;
 }
 
@@ -1130,7 +1137,7 @@ img {
   border-color: #68A2CA;
 }
 
-.select-control:active {
+.select-control:focus-visible {
   border-color: #3F5E72;
 }
 
@@ -1225,17 +1232,33 @@ img {
   box-sizing: border-box;
 }
 
-.catalog-item-image {
+.catalog-item-link {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+.catalog-item-header {
   grid-column: 1 / -1;
+  margin: 0;
+  margin-bottom: -1px;
+  padding: 0;
+  text-decoration: none;
+}
+
+.catalog-item-image {
+  padding-bottom: 13px;
 }
 
 .catalog-item-title {
   max-width: 300px;
   grid-column: 1 / -1;
   margin: 0;
+  padding: 0;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  color: #000000;
 }
 .button-detail {
   min-height: 36px;
@@ -1247,13 +1270,9 @@ img {
 
 .button-favorites {
   min-height: 36px;
-  display: grid;
-  align-items: center;
   border: none;
   background-color: #82B3D3;
-  padding: 0;
-  box-sizing: border-box;
-}
+  }
 
 .btn-favorites-active {
   background-color: #7DB54F;
@@ -1265,7 +1284,6 @@ img {
 
 .raiting-star {
   display: inline-block;
-  align-self: center;
   width: 18px;
   height: 17px;
   background-image: url(../images/icon/star.svg);
