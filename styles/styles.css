@@ -1618,6 +1618,17 @@ img {
   text-transform: lowercase;
 }
 
+.children-count-description::after {
+  width: 19px;
+  height: 9px;
+  position: absolute;
+  top: 32px;
+  left: 3px;
+  background-image: url(../images/icon/modal-triangle.svg);
+  background-size: contain;
+  content: "";
+}
+
 .children-count-description::before {
   width: 256px;
   height: 143px;
@@ -1630,9 +1641,9 @@ img {
   color: #FFFFFF;
   position: absolute;
   top: 41px;
-  left: -115px;
-  padding: 15px 18px 18px 22px;
-  background: #333333;
+  left: -116px;
+  padding: 20px 18px 18px 15px;
+  background-color: #333333;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   box-sizing: border-box;
   border-radius: 10px;
