@@ -196,30 +196,28 @@
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="modal-form-first-date" for="start-date">
               <span class="modal-form-label">Дата заезда:</span>
-              <input class="modal-input-start-date" placeholder="27 апреля 2020" type="date" name="start-date"
-                id="start-date" required>
+              <input class="modal-input-start-date" type="date" name="start-date" id="start-date">
             </label>
-            <label class="modal-form-last-date" for="start-date">
+            <label class="modal-form-last-date" for="last-date">
               <span class="modal-form-label">Дата выезда:</span>
-              <input class="modal-input-last-date" placeholder="1 сентября 2023" type="date" name="last-date"
-                id="last-date" required>
+              <input class="modal-input-last-date" type="date" name="last-date" id="last-date">
             </label>
             <label class="modal-form-adults" for="adults-count">
               <span class="modal-form-label">Взрослые:</span>
-              <button class="button-counter counter-minus"></button>
-              <input class="modal-input-people-counter" placeholder="2" type="number" name="adults-count"
-                id="adults-count" min="1" max="10" value="2">
-                <button class="button-counter counter-plus"></button>
+              <input class="modal-input-people-counter" type="number" name="adults-count"
+               id="adults-count" min="1" max="10" value="2">
             </label>
+            <button class="button-counter counter-minus"></button>
+            <button class="button-counter counter-plus"></button>
             <label class="modal-form-children" for="children-count">
               <span class="modal-form-label label-children-count">Дети:
                 <span class="children-count-description">i</span>
               </span>
-              <button class="button-counter counter-minus"></button>
-              <input class="modal-input-people-counter" placeholder="2" type="number" name="children-count"
-                id="children-count" min="1" max="10" value="2">
-              <button class="button-counter counter-plus"></button>
+              <input class="modal-input-people-counter" type="number" name="children-count"
+              id="children-count" min="1" max="10" value="2">
             </label>
+            <button class="button-counter counter-minus"></button>
+            <button class="button-counter counter-plus"></button>
             <button class="modal-form-button" type="submit">
               <span class="modal-form-button-text">Найти</span>
             </button>

@@ -25,7 +25,7 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -77,7 +77,7 @@ img {
 }
 
 .button {
-  font-family: inherit;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-size: 16px;
   line-height: 20px;
@@ -393,8 +393,10 @@ img {
   display: flex;
   justify-content: center;
   background-color: #D9EAF2;
-  background: url(../images/vector-hero-background.svg) center bottom no-repeat,
-    url(../images/hero-background.jpg) top left no-repeat;
+  background-image: url(../images/vector-hero-background.svg),
+                    url(../images/hero-background.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center bottom, top left;
   background-size: contain, contain;
 
 }
@@ -705,8 +707,7 @@ img {
   width: 452px;
   padding: 14px 20px;
   margin: 0;
-  font-family: "PT Sans";
-  font-style: normal;
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -841,10 +842,9 @@ img {
 .breadcrumbs-item {
   min-width: 13px;
   min-height: 21px;
-  ;
   position: relative;
   font-size: 16px;
-  margin-right: 28px;
+  margin-right: 7px;
 }
 
 .breadcrumbs-item-home {
@@ -863,17 +863,20 @@ img {
 }
 
 .breadcrumbs-link {
+  display: block;
+  position: relative;
+  padding-left: 21px;
   color: #FFFFFF;
   text-decoration: none;
   user-select: none;
 }
 
-.breadcrumbs-item:not(:last-child)::after {
+.breadcrumbs-link::before {
   position: absolute;
-  top: 5px;
-  left: 24px;
+  top: 6px;
+  left: 5px;
   width: 6px;
-  height: 10px;
+  height: 9px;
   background-image: url(../images/icon/breadcrumbs-arrow.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -882,6 +885,7 @@ img {
 
 .catalog-filter {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
 }
 
@@ -1047,7 +1051,7 @@ img {
 .price-input {
   width: 80px;
   position: relative;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1184,7 +1188,7 @@ img {
 }
 
 .sorting {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1195,7 +1199,7 @@ img {
 }
 
 .sorting-card-button {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   position: absolute;
   top: 0;
   right: 0;
@@ -1211,6 +1215,7 @@ img {
 .sorting-card-list {
   width: 160px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
   padding: 0;
@@ -1479,7 +1484,7 @@ img {
 .modal-title {
   margin: 0;
   margin-bottom: 64px;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -1499,8 +1504,7 @@ img {
 
 .modal-form-label {
   display: grid;
-  font-family: 'PT Sans';
-  font-style: normal;
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -1523,8 +1527,7 @@ img {
   width: 440px;
   height: 48px;
   grid-column: 2 / 4;
-  font-family: 'PT Sans';
-  font-style: normal;
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -1549,8 +1552,7 @@ img {
   width: 440px;
   height: 48px;
   grid-column: 2 / 4;
-  font-family: 'PT Sans';
-  font-style: normal;
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -1618,7 +1620,7 @@ img {
   text-transform: lowercase;
 }
 
-.children-count-description::after {
+/* .children-count-description::after {
   width: 19px;
   height: 9px;
   position: absolute;
@@ -1632,8 +1634,7 @@ img {
 .children-count-description::before {
   width: 256px;
   height: 143px;
-  font-family: 'PT Sans';
-  font-style: normal;
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -1648,7 +1649,7 @@ img {
   box-sizing: border-box;
   border-radius: 10px;
   content: "Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.";
-}
+} */
 
 .button-counter {
   width: 40px;
@@ -1710,7 +1711,7 @@ img {
 }
 
 .modal-form-button-text {
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
