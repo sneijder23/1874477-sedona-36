@@ -70,7 +70,8 @@
                   <p class="reason-text white">Седона — не аттракцион для туристов,
                     там течёт своя жизнь</p>
                 </div>
-                <img src="/images/photo-1.jpg" width="800" height="384" alt="Домики на фоне гор">
+                <img class="reason-card-photo" src="/images/photo-1.jpg" width="800" height="384"
+                  alt="Домики на фоне гор">
               </li>
               <li class="reason-item background-light-gray ">
                 <h3 class="reason-heading">Небольшая<br>площадь</h3>
@@ -123,7 +124,7 @@
             <h2 class="search-heading">Заинтересовались?</h2>
             <p class="search-text">Укажите предполагаемые даты поездки,<br>
               и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-            <a class="button search-button" href="catalog.html">ПОИСК ГОСТИНИЦЫ В седоне</a>
+            <a class="button search-button" href="#openModal">ПОИСК ГОСТИНИЦЫ В седоне</a>
           </section>
 
           <section class="subscribe">
@@ -188,38 +189,79 @@
 
     </div>
 
-    <div class="modal-container modal-container-close">
+    <div class="modal-container modal-container-close" id="openModal">
       <div class="modal">
-        <button class="modal-close-button"><span class="visually-hidden">Закрыть</span></button>
+        <a class="modal-close-button" href="#"><span class="visually-hidden">Закрыть</span></a>
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="modal-form-first-date" for="start-date">
+            <label class="modal-row start-date invalid-date" for="start-date">
               <span class="modal-form-label">Дата заезда:</span>
-              <input class="modal-input-start-date" type="date" name="start-date" id="start-date">
+              <input class="modal-input-date" type="text" name="start-date" id="start-date" placeholder="Укажите дату"
+                value="27 апреля 2020">
             </label>
-            <label class="modal-form-last-date" for="last-date">
+            <label class="modal-row last-date valid-date" for="last-date">
               <span class="modal-form-label">Дата выезда:</span>
-              <input class="modal-input-last-date" type="date" name="last-date" id="last-date">
+              <input class="modal-input-date" type="text" name="last-date" id="last-date" placeholder="Укажите дату"
+                value="1 сентября 2023">
             </label>
-            <label class="modal-form-adults" for="adults-count">
-              <span class="modal-form-label">Взрослые:</span>
-              <input class="modal-input-people-counter" type="number" name="adults-count"
-               id="adults-count" min="1" max="10" value="2">
-            </label>
-            <button class="button-counter counter-minus"></button>
-            <button class="button-counter counter-plus"></button>
-            <label class="modal-form-children" for="children-count">
-              <span class="modal-form-label label-children-count">Дети:
-                <span class="children-count-description">i</span>
-              </span>
-              <input class="modal-input-people-counter" type="number" name="children-count"
-              id="children-count" min="1" max="10" value="2">
-            </label>
-            <button class="button-counter counter-minus"></button>
-            <button class="button-counter counter-plus"></button>
+            <div class="modal-row row-column">
+              <div class="row-item1">
+                <label class="modal-form-adults" for="adults-count">
+                  <span class="modal-form-label">Взрослые:</span>
+                  <input class="modal-input-people-counter" type="number" name="adults-count" id="adults-count" min="1"
+                    max="10" value="2">
+                </label>
+                <button class="button-counter counter-minus" type="button">
+                  <svg class="background-counter-minus counter" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                    fill="none" viewBox="0 0 14 2">
+                    <path fill="currentColor" d="M0 0v2h14V0H0Z" />
+                  </svg>
+                </button>
+                <button class="button-counter counter-plus" type="button">
+                  <svg class="background-counter-plus counter" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none"
+                    viewBox="0 0 14 14">
+                    <path fill="currentColor" d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="row-item2 modal-form-children">
+                <span class=" form-label-icon">
+                  <label class="label-row-icon" for="children-count">
+                    Дети:
+                  </label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-children">
+                      <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                        fill="none" viewBox="0 0 26 26">
+                        <circle cx="13" cy="13" r="13" fill="currentColor" />
+                        <path fill="#fff" fill-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z"
+                          clip-rule="evenodd" />
+                      </svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-children">Укажите количество
+                      детей, которые будут с вами, возраст которых от 6 до 18 лет.
+                      Дети до 6 лет размещаются бесплатно.</span>
+                  </span>
+                </span>
+                <input class="modal-input-people-counter tooltip-input" type="number" name="children-count"
+                  id="children-count" min="1" max="10" value="2">
+                <button class="button-counter counter-minus" type="button">
+                  <svg class="background-counter-minus counter" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                    fill="none" viewBox="0 0 14 2">
+                    <path fill="currentColor" d="M0 0v2h14V0H0Z" />
+                  </svg>
+                </button>
+                <button class="button-counter counter-plus" type="button">
+                  <svg class="background-counter-plus counter" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                    fill="none" viewBox="0 0 14 14">
+                    <path fill="currentColor" d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
             <button class="modal-form-button" type="submit">
-              <span class="modal-form-button-text">Найти</span>
+              Найти
             </button>
           </form>
         </section>
