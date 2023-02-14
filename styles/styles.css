@@ -1675,11 +1675,19 @@ img {
   appearance: textfield;
 }
 
-.modal-input-people-counter:hover,
-.modal-input-people-counter:focus {
-  background-color: #FFFFFF;
-  outline-offset: -2px;
-  outline: 1px solid #68A2CA;
+.modal-input-people-counter:hover {
+  background-color: #E6E6E6;
+  color: rgba(0, 0, 0, 0.6)
+ }
+
+ .modal-input-people-counter:focus {
+  outline-offset: -3px;
+  outline: 3px solid #83B3D3;
+}
+
+.modal-input-people-counter:focus-visible:not(:placeholder-shown) {
+  outline-offset: -3px;
+  outline: 2px solid #000000;
 }
 
 .tooltip-input {
@@ -1878,4 +1886,9 @@ img {
 
 .modal-form-button:active {
   color: rgba(255, 255, 255, 0.3);
+}
+
+.modal-form-button:disabled {
+  color: #FFFFFF;
+  background-color: #E5E5E5;
 }
