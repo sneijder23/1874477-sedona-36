@@ -179,12 +179,12 @@ img {
   opacity: 0.3;
 }
 
-.footer-logo:hover path,
-.footer-logo:focus path {
+.footer-logo-container:hover path,
+.footer-logo-container:focus path {
   fill: #756157;
 }
 
-.footer-logo:active path {
+.footer-logo-container:active path {
   opacity: 0.3;
 }
 
@@ -419,7 +419,7 @@ img {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 69px 0;
+  padding: 69px 250px;
   margin-bottom: 21px
 }
 
@@ -569,7 +569,7 @@ img {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  padding: 64px 0;
+  padding: 64px 250px;
 }
 
 .advantages-header-title {
@@ -731,6 +731,18 @@ img {
   box-sizing: border-box;
 }
 
+.field:hover {
+  background-color: #E6E6E6;
+}
+
+.field:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.field:focus-visible:not(:placeholder-shown) {
+  outline: 2px solid #000000;
+}
+
 .subscribe-button {
   width: 232px;
   padding: 8px 50px;
@@ -754,12 +766,12 @@ img {
 
 .footer-social-list {
   max-width: 144px;
+  min-width: 142px;
   margin: 0 41px 0 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  align-items: center;
   list-style-type: none;
 }
 
@@ -791,22 +803,14 @@ img {
   margin: auto;
 }
 
-.social-icon:hover .path,
-.social-icon:focus {
-  fill: #68A2CA;
-}
-
-.social-icon:active .path {
-  fill: rgba(104, 162, 202, 0.3);
-}
-
 .footer-telephone {
+  min-width: 370px;
+  max-width: 735px;
   display: inline-block;
-  padding: 5px 5px 5px 5px;
-  margin: 0 231px 0 auto;
+  padding: 5px 5px;
+  margin: 0 216px 0 176px;
   font-size: 40px;
   line-height: 40px;
-  vertical-align: middle;
   color: #000000;
   text-decoration: none;
   text-align: center;
@@ -816,6 +820,7 @@ img {
 
 .footer-logo-container {
   min-width: 115px;
+  max-height: 50px;
   text-decoration: none;
 }
 
@@ -1105,6 +1110,10 @@ img {
   margin: 0;
 }
 
+.price-input:hover {
+  background-color: #E6E6E6;
+}
+
 .price-input:focus {
   outline: 3px solid #83B3D3;
 }
@@ -1389,7 +1398,7 @@ img {
 }
 
 .pagination-link {
-  width: 60px;
+  min-width: 60px;
   height: 60px;
   display: flex;
   justify-content: center;
@@ -1405,7 +1414,7 @@ img {
 }
 
 .pagination-space {
-  width: 60px;
+  min-width: 60px;
   height: 60px;
   display: flex;
   justify-content: center;
@@ -1415,6 +1424,8 @@ img {
   text-decoration: none;
   color: #000000;
   background-color: #FFFFFF;
+  padding: 8px 10px;
+  box-sizing: border-box;
 }
 
 /* Блок подписки в каталоге */
