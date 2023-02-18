@@ -198,19 +198,19 @@
             <label class="modal-row start-date invalid-date" for="start-date">
               <span class="modal-form-label">Дата заезда:</span>
               <input class="modal-input-date" type="text" name="start-date" id="start-date" placeholder="Укажите дату"
-                value="27 апреля 2020">
+                 required>
             </label>
             <label class="modal-row last-date valid-date" for="last-date">
               <span class="modal-form-label">Дата выезда:</span>
               <input class="modal-input-date" type="text" name="last-date" id="last-date" placeholder="Укажите дату"
-                value="1 сентября 2023">
+                 required>
             </label>
             <div class="modal-row row-column">
               <div class="row-item1">
                 <label class="modal-form-adults" for="adults-count">
                   <span class="modal-form-label">Взрослые:</span>
                   <input class="modal-input-people-counter" type="number" name="adults-count" id="adults-count" min="1"
-                    max="10" value="2">
+                    max="10" value="2" required>
                 </label>
                 <button class="button-counter counter-minus" type="button">
                   <svg class="background-counter-minus counter" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
@@ -245,7 +245,7 @@
                   </span>
                 </span>
                 <input class="modal-input-people-counter tooltip-input" type="number" name="children-count"
-                  id="children-count" min="1" max="10" value="2">
+                  id="children-count" min="1" max="10" value="2" required>
                 <button class="button-counter counter-minus" type="button">
                   <svg class="background-counter-minus counter" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
                     fill="none" viewBox="0 0 14 2">
