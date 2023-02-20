@@ -385,7 +385,6 @@ img {
 .header-link-button {
   width: 160px;
   background-color: #756157;
-  padding: 8px 34px;
 }
 
 
@@ -419,7 +418,7 @@ img {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 69px 250px;
+  padding: 69px 200px;
   margin-bottom: 21px
 }
 
@@ -569,7 +568,7 @@ img {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  padding: 64px 250px;
+  padding: 64px 200px;
 }
 
 .advantages-header-title {
@@ -678,7 +677,6 @@ img {
 .search-button {
   width: 376px;
   margin: 0 auto;
-  padding: 8px 50px;
   font-size: 20px;
   line-height: 36px;
   background-color: #756157;
@@ -745,11 +743,9 @@ img {
 
 .subscribe-button {
   width: 232px;
-  padding: 8px 50px;
   font-size: 20px;
   line-height: 36px;
   background-color: #82B3D3;
-  border: none;
   border-radius: 0 4px 4px 0;
 }
 
@@ -910,10 +906,10 @@ img {
 }
 
 .catalog-filter-group {
-  width: 150px;
+  width: 175px;
   display: flex;
   flex-wrap: wrap;
-  margin: 0 70px 0 0;
+  margin: 0 45px 0 0;
   padding: 0;
   border: none;
 }
@@ -1132,15 +1128,11 @@ img {
 
 .control-button-submit {
   margin: 0 0 32px;
-  padding: 8px 50px;
   background-color: #82B3D3;
-  border: none;
   box-sizing: border-box;
 }
 
 .control-button-reset {
-  padding: 8px 50px;
-  border: none;
   background-color: rgba(0, 0, 0, 0);
 }
 
@@ -1589,7 +1581,7 @@ img {
   margin-bottom: 4px;
   padding: 13px 45px 11px 20px;
   background-color: #F2F2F2;
-  border-radius: 2px;
+  border-radius: 4px;
   border: none;
   box-sizing: border-box;
 }
